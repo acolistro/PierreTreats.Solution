@@ -2,27 +2,27 @@
   Layout = "_Layout";
 }
 
-@model Bakery.Models.Treat;
+@model Bakery.Models.Flavor;
 
-<h2>Treat Details</h2>
+<h2>Flavor Details</h2>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<h3>@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)</h3>
 
-@if(@Model.Flavors.Count == 0)
+@if(@Model.Treats.Count == 0)
 {
-  <p>This Treat does not contain any Flavors</p>
+  <p>This Flavor is not assigned to any Treats</p>
 }
 else
 {
-  <h4>Flavors of this Treat:</h4>
+  <h4>Treats assigned this Flavor:</h4>
   <ul>
-  @foreach(var join in Model.Flavors)
+  @foreach(var join in Model.Treats)
   {
-    <li>@join.Flavor.Description</li>
+    <li>@join.Treat.Name</li>
   }
   </ul>
 }
 
-<p>@Html.ActionLink("Back to Treats", "Index")</p>
-<p>@Html.ActionLink("Edit Treat", "Edit", new { id = Model.TreatId })</p>
-<p>@Html.ActionLink("Delete Treat", "Delete", new { id = Model.TreatId })</p>
+<p>@Html.ActionLink("Back to Flavors", "Index")</p>
+<p>@Html.ActionLink("Edit Flavor", "Edit", new { id = Model.FlavorId })</p>
+<p>@Html.ActionLink("Delete Flavor", "Delete", new { id = Model.FlavorId })</p>

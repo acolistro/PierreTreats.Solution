@@ -2,13 +2,13 @@
   Layout = "_Layout";
 }
 
-@model Bakery.Models.Treat
+@model Bakery.Models.Flavor
 
-<h2>Are you sure you want to delete this Treat?</h2>
+<h2>Are you sure you want to delete this Flavor?</h2>
 
-@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
+@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)
 @using (Html.BeginForm())
 {
     <input type="submit" value="Delete" />
 }
-@Html.ActionLink("Back to Treats", "Index")
+@Html.ActionLink("Back to Flavors", "Index")
