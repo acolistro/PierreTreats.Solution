@@ -68,7 +68,7 @@ Your project is now ready.
 
 ## Known Bugs
 
-_No known bugs at this time._
+_Once objects are added to the database, certain views fail to render._
 
 ## Support and contact details
 
