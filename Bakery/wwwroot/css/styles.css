@@ -27,10 +27,13 @@ a {
   font-size: 25px;
   padding: 8px;
   color: rgb(66, 39, 39);
+  margin-top: 20px;
 }
 
 h1 {
   margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #CCC;
 }
 
 .jumbotron {
