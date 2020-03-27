@@ -2,13 +2,13 @@
   Layout = "_Layout";
 }
 
-@model Bakery.Models.Treat
+@model Bakery.Models.Flavor
 
-<h4>Add a new Treat</h4>
+<h4>Add a new Flavor</h4>
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(model => model.Name)
-    @Html.TextBoxFor(model => model.Name)
-    <input type="submit" value="Add new Treat" />
+    @Html.LabelFor(model => model.Description)
+    @Html.TextBoxFor(model => model.Description)
+    <input type="submit" value="Add new Flavor" />
 }
-<p>@Html.ActionLink("Show all Treats", "Index")</p>
+<p>@Html.ActionLink("Show all Flavors", "Index")</p>
