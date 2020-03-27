@@ -37,7 +37,6 @@ namespace Bakery.Controllers
       return View();
     }
 
-    //updated Create post method
     [HttpPost]
     public async Task<ActionResult> Create(Treat treat, int FlavorId)
     {

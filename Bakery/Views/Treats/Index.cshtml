@@ -3,10 +3,10 @@
 }
 
 @using Bakery.Models;
-@using System.Security.Claims
+@* @using System.Security.Claims *@
 @model IEnumerable<Bakery.Models.Treat>
 
-<h1>Treats for @User.Identity.Name</h1>
+<h1>Your Treats</h1>
 
 @if (Model.Any())
 {
