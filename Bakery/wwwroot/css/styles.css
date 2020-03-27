@@ -1,0 +1,102 @@
+body {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+body::after {
+  content: "";
+  background: url("../img/bakerybg.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
+
+img {
+  opacity: .5;
+  margin: 10px;
+}
+
+a {
+  font-size: 25px;
+  padding: 8px;
+  color: rgb(66, 39, 39);
+  margin-top: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #CCC;
+}
+
+.jumbotron {
+  text-align: center;
+  margin-top: 15px;
+  background: rgba(0, 0, 0, .1);
+  color: #fff;
+}
+
+.splash-page-header {
+  font-family: 'Dancing Script', cursive;
+  color: rgb(184, 11, 118);
+  text-shadow: -1px 1px 0 #000,
+  1px 1px 0 #000,
+ 1px -1px 0 #000,
+-1px -1px 0 #000;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+div#footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color:#CCC;
+  background:#333;
+  padding:8px;
+}
+
+.navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  color: rgb(231, 188, 79);
+  font-size: 25px;
+}
+
+
+.btn button{
+  color: white;
+}
+
+.button-parent{
+  text-align: center;
+}
+
+.button-group {
+  position: fixed;
+  bottom: 100px;
+  text-align: center;
+  margin-left: 16vw;
+  margin-right: 16vw;
+  border-style: none;
+  border-width: 15px;
+}
+
+#search {
+  margin-top: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-left: 16vw;
+  margin-right: 16vw;
+  display: inline-block;
+}
